@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-image: url(backimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1rem;
+  height: 100vh;
+}
+
+.leftheader{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    min-width: 50%;
+    text-decoration: none;
+}
+
+.leftheader a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    transition: rgb(77, 77, 131) 0.3;
+}
+
+.leftheader a:hover{
+    color: rgb(128, 128, 155);
+}
+
+.section{
+    background-color: black;
+    height: 100vh;
+    width:fit-content;
+    color: rgb(130, 125, 114);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+
+}
+
+.aboutsection{
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.headingsection{
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.paraone{
+    font-size: 1rem;
+    font-style: italic;
+    padding: 1rem;
+    line-height: 34px;
+    max-width: 80%;
+}
+
+.sectionbox{
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    gap: 5rem;
+}
+
+.leftsetionbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sumitphoto{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.sumitphoto:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.rightsectionbox{
+    padding: 2rem;
+    line-height: 34px;
+    margin: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperboxcontainer{
+    background-color: grey;
+    margin-top: 100vh;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.upperbox{
+    display: flex;
+    flex-direction: row;
+    min-width: 80%;
+    text-decoration: none; 
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-top: 1.2rem;
+}
+
+.lowerbox{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    min-width: 80%;
+    text-decoration: none; 
+}
+
+.lowerboxcontainer{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+}
+
+
+.works{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:  rgb(130, 125, 114);
+    min-width: 89%;
+    text-align: center;
+}
+
+.firstworkbox{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.workheading{
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.workpara{
+    font-style: italic;
+    line-height: 2;
+}
+
+.secondworkbox{
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-width: 65%;
+    padding-bottom: 2rem;
+}
+
+.imagess{
+    width: 17rem;
+    height: 17rem;
+    padding: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.imagess:hover{
+    filter: brightness(60%);
+}
+
+.landscp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    width: 16rem;
+    height: 16rem;
+    padding-left: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.landscp:hover{
+    filter: brightness(60%);
+}
+
+.loadbutton{
+    margin: 0 auto;
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(72, 52, 52);
+    color: rgb(130, 125, 114) ;
+    border: none;
+    transition: filter 0.3s ease;
+    margin-bottom: 3rem;
+}
+
+.buttontext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.loadbutton:hover{
+    background-color: black;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(130, 125, 114);
+    min-width: 90%;
+}
+
+.uppercontactbox{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.lowercontactbox{
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstcontactbox{
+    padding-top: 3rem;
+    line-height: 2.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactheading{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.firstcontactbox p{
+    font-style: italic;
+}
+
+.secondcontactbox{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.rightcontactbox img{
+    border-radius: 4px;
+}
+
+.leftcontactbox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.topleft{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contactdetails{
+    line-height: 2;
+}
+
+.thirdcontactbox{
+    min-width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.buttoncontact{
+    display: flex;
+    justify-content: start;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+}
+
+.fourthcontactbox{
+    display: flex;
+    justify-content: end;
+    min-width: 40%;
+
+}
+
+.messagebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: centre;
+    align-items: center;
+    height: 2rem;
+    width: 7rem;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.messagebutton img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.lastbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.lastcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.firstbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: rem;
+    margin: 0 auto;
+}
+
+
+.buttonlastbox{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    justify-content: center;
+    background-color: rgb(39, 36, 36);
+    border: none;
+}
+
+.firstbox p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.secondbox{
+    
+}
+
+.imagelogo{
+   width: 2rem;
+   height: 2rem;
+   border-radius: 3rem; 
+   transition: transform 0.3s ease,box-shadow 0.3s ease;    
+}
+
+.imagelogo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(49, 41, 41);
+}
+
+
+.thirdbox{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.thirdbox a{
+    color: white;
+   text-decoration: none;
+}
+
+.thirdbox p{
+    color: white;
+}
